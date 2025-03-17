@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="row">
           <div className="col-12 col-md-3 mb-4 mb-md-0">
             <Link href="/" className="d-block mb-3">
-              <img src="/img/general/terralemon-white.svg" alt="Terralemon" height="30" />
+              <img src="https://terralemon.nl/img/general/terralemon-white.svg" alt="Terralemon" height="30" />
             </Link>
             <address className="mb-0">
               Terralemon B.V.<br />
