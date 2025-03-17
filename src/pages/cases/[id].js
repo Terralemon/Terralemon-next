@@ -14,7 +14,7 @@ const casesData = {
       <p>Met video interviews, social media content en een interactieve website hebben we de expertise van TNO toegankelijk gemaakt voor een breder publiek.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/TNO-UB-project-image-5.jpg',
-    video: 'https://terralemon.nl/video/250113_Unboxed.mov',
+    video: 'https://terralemon.nl/videos/250113_Unboxed.mov',
     client: 'TNO',
     year: '2023',
     services: ['Strategie', 'Video productie', 'Website ontwerp', 'Social media']
@@ -27,7 +27,7 @@ const casesData = {
       <p>Het doel van de campagne was om de expertise van TNO in duurzame energiesystemen, industriële processen en materialen onder de aandacht te brengen.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/210315-WarmingUP.jpg',
-    video: 'https://terralemon.nl/video/210315-WarmingUP.mov',
+    video: 'https://terralemon.nl/videos/210315-WarmingUP.mov',
     client: 'TNO',
     year: '2021',
     services: ['Strategie', 'Video productie', 'Animatie', 'Visual design']
@@ -40,7 +40,7 @@ const casesData = {
       <p>In deze campagne hebben we complexe onderzoeksresultaten en technologieën omgezet in heldere, begrijpelijke communicatie voor diverse doelgroepen.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/201002-tnogezondleven.jpg',
-    video: 'https://terralemon.nl/video/201002-tnogezondleven.mov',
+    video: 'https://terralemon.nl/videos/201002-tnogezondleven.mov',
     client: 'TNO',
     year: '2020',
     services: ['Content strategie', 'Video productie', 'Animatie', 'Visual design']
@@ -53,7 +53,7 @@ const casesData = {
       <p>Voor LinXis hebben we een heldere huisstijl ontwikkeld die de precisie en innovatie van hun wetenschappelijke werk uitstraalt.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/241118_LinXis.jpg',
-    video: 'https://terralemon.nl/video/241118_LinXis_6.mov',
+    video: 'https://terralemon.nl/videos/241118_LinXis_6.mov',
     client: 'LinXis Biopharmaceuticals',
     year: '2024',
     services: ['Branding', 'Visual design', 'Animatie', 'Website ontwikkeling']
@@ -66,7 +66,7 @@ const casesData = {
       <p>We hebben een serie video's en visuele content gemaakt die de urgentie en de impact van TNO's werk laat zien.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/240614-Dit-is-onze-tijd.jpg',
-    video: 'https://terralemon.nl/video/240614-dit-is-onze-tijd-720.mov',
+    video: 'https://terralemon.nl/videos/240614-dit-is-onze-tijd-720.mov',
     client: 'TNO',
     year: '2024',
     services: ['Campagne ontwikkeling', 'Video productie', 'Social media content']
@@ -79,7 +79,7 @@ const casesData = {
       <p>In deze campagne hebben we een visueel aantrekkelijke manier gevonden om de complexe technologieën en systemen uit te leggen aan diverse stakeholders.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/200409-Zero.jpg',
-    video: 'https://terralemon.nl/video/200409-Zero.mov',
+    video: 'https://terralemon.nl/videos/200409-Zero.mov',
     client: 'TNO',
     year: '2020',
     services: ['Animatie', 'Visual design', 'Video productie', 'Content strategie']
@@ -92,7 +92,7 @@ const casesData = {
       <p>We hebben een campagne ontwikkeld die de impact van hun werk op digitale transformatie en strategische besluitvorming duidelijk communiceert.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/190916_FeedTheFuture.jpg',
-    video: 'https://terralemon.nl/video/190916_FeedTheFuture.mov',
+    video: 'https://terralemon.nl/videos/190916_FeedTheFuture.mov',
     client: 'TNO',
     year: '2019',
     services: ['Strategie', 'Video productie', 'Visual design', 'Content ontwikkeling']
@@ -105,7 +105,7 @@ const casesData = {
       <p>De app is ontworpen om kinderen een veilige en leuke digitale omgeving te bieden, passend bij de Zappelin merkbeleving.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/240325-zappelinapp.jpg',
-    video: 'https://terralemon.nl/video/240325-zappelinapp.mov',
+    video: 'https://terralemon.nl/videos/240325-zappelinapp.mov',
     client: 'NPO',
     year: '2024',
     services: ['UX/UI design', 'Character design', 'Animatie', 'Concept ontwikkeling']
@@ -118,7 +118,7 @@ const casesData = {
       <p>Het ontwerp is vrolijk, toegankelijk en herkenbaar voor de jonge doelgroep, met een duidelijke visuele taal die past bij de educatieve en entertainende content van de zender.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/180626-NPO-Zappelin.jpg',
-    video: 'https://terralemon.nl/video/180626-NPO-Zappelin.mov',
+    video: 'https://terralemon.nl/videos/180626-NPO-Zappelin.mov',
     client: 'NPO',
     year: '2018',
     services: ['Branding', 'Animatie', 'Vormgeving', 'Concept ontwikkeling']
@@ -131,7 +131,7 @@ const casesData = {
       <p>Met kleurrijke animaties, toegankelijke karakters en een speelse vormgeving nodigen we kinderen uit om mee te doen en hun verbeelding te gebruiken.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/190819-ziz-avond.jpg',
-    video: 'https://terralemon.nl/video/190819-ziz-avond.mov',
+    video: 'https://terralemon.nl/videos/190819-ziz-avond.mov',
     client: 'NPO',
     year: '2019',
     services: ['Concept ontwikkeling', 'Character design', 'Animatie', 'Art direction']
@@ -144,7 +144,7 @@ const casesData = {
       <p>Deze campagnes helpen TNO om hun eigen organisatie te versterken en de werkervaring van medewerkers te verbeteren.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/190614-TNO-intern.jpg',
-    video: 'https://terralemon.nl/video/190614-TNO-intern.mov',
+    video: 'https://terralemon.nl/videos/190614-TNO-intern.mov',
     client: 'TNO',
     year: '2019',
     services: ['Interne communicatie', 'Campagne ontwikkeling', 'Visual design', 'Animatie']
@@ -169,7 +169,7 @@ const casesData = {
       <p>Onze visualisaties maken de complexe medische technologieën begrijpelijk voor zowel medische professionals als patiënten.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/230615-ImagingCenter.jpg',
-    video: 'https://terralemon.nl/video/230615-ImagingCenter.mov',
+    video: 'https://terralemon.nl/videos/230615-ImagingCenter.mov',
     client: 'Amsterdam UMC',
     year: '2023',
     services: ['Medical visualization', 'Animatie', 'Content ontwikkeling', 'Visual design']
@@ -182,7 +182,7 @@ const casesData = {
       <p>We hebben complexe zorgverbetertrajecten vertaald naar heldere en aansprekende visuele verhalen.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/211026-citrienfonds.jpg',
-    video: 'https://terralemon.nl/video/211026-citrienfonds.mov',
+    video: 'https://terralemon.nl/videos/211026-citrienfonds.mov',
     client: 'Citrienfonds',
     year: '2021',
     services: ['Strategie', 'Visual design', 'Animatie', 'Content ontwikkeling']
@@ -195,7 +195,7 @@ const casesData = {
       <p>Door complexe AI-concepten om te zetten in begrijpelijke visuele verhalen, maken we het onderwerp toegankelijk voor een breed publiek.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/181221-AI.jpg',
-    video: 'https://terralemon.nl/video/181221-AI.mov',
+    video: 'https://terralemon.nl/videos/181221-AI.mov',
     client: 'Diverse klanten',
     year: '2018',
     services: ['Concept ontwikkeling', 'Animatie', 'Tech visualisatie', 'Content strategie']
@@ -232,7 +232,7 @@ const casesData = {
       <p>Door complexe cyberdreigingen en beveiligingsmaatregelen te visualiseren, maken we het onderwerp begrijpelijk en urgent voor diverse doelgroepen.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/200311-Smart-Security.jpg',
-    video: 'https://terralemon.nl/video/200311-Smart-Security.mov',
+    video: 'https://terralemon.nl/videos/200311-Smart-Security.mov',
     client: 'Diverse klanten',
     year: '2020',
     services: ['Concept ontwikkeling', 'Animatie', 'Visual design', 'Content strategie']
@@ -245,7 +245,7 @@ const casesData = {
       <p>Onze medische animaties maken het ziektebeeld begrijpelijk voor zowel patiënten en families als medische professionals.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/221005-OI.jpg',
-    video: 'https://terralemon.nl/video/221005-OI.mov',
+    video: 'https://terralemon.nl/videos/221005-OI.mov',
     client: 'UMC Utrecht Wilhelmina Kinderziekenhuis',
     year: '2022',
     services: ['Medical visualization', 'Animatie', 'Visual storytelling', 'Content ontwikkeling']
@@ -258,7 +258,7 @@ const casesData = {
       <p>Onze animaties en visualisaties maken complexe medische procedures en behandelingen toegankelijk voor patiënten en hun families.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/220322-NKI.jpg',
-    video: 'https://terralemon.nl/video/220322-NKI.mov',
+    video: 'https://terralemon.nl/videos/220322-NKI.mov',
     client: 'Antoni van Leeuwenhoek',
     year: '2022',
     services: ['Medical visualization', 'Animatie', 'Content ontwikkeling', 'Visual design']
@@ -319,7 +319,7 @@ const casesData = {
       <p>Door middel van storytelling en character design communiceren we hoe bouwactiviteiten positief kunnen bijdragen aan de leefomgeving.</p>
     `,
     image: 'https://terralemon.nl/img/videos/_medium/200921-Boele_MovingStill.jpg',
-    video: 'https://terralemon.nl/video/200921-Boele_MovingStill.mp4',
+    video: 'https://terralemon.nl/videos/200921-Boele_MovingStill.mp4',
     client: 'Heutinkgroep',
     year: '2020',
     services: ['Character design', 'Campagne ontwikkeling', 'Animatie', 'Storytelling']

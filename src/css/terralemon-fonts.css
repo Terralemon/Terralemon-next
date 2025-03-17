@@ -4,35 +4,35 @@
 
 @font-face {
     font-family: 'Gotham-Light';
-    src: url('/fonts/Gotham-Light.eot');
-    src: url('/fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Gotham-Light.woff') format('woff'),
-         url('/fonts/Gotham-Light.ttf') format('truetype');
+    src: url('https://terralemon.nl/fonts/Gotham-Light.eot');
+    src: url('https://terralemon.nl/fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+         url('https://terralemon.nl/fonts/Gotham-Light.woff') format('woff'),
+         url('https://terralemon.nl/fonts/Gotham-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Gotham-Book';
-    src: url('/fonts/Gotham-Book.eot');
-    src: url('/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Gotham-Book.woff') format('woff'),
-         url('/fonts/Gotham-Book.ttf') format('truetype');
+    src: url('https://terralemon.nl/fonts/Gotham-Book.eot');
+    src: url('https://terralemon.nl/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+         url('https://terralemon.nl/fonts/Gotham-Book.woff') format('woff'),
+         url('https://terralemon.nl/fonts/Gotham-Book.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Gotham-Medium';
-    src: url('/fonts/Gotham-Medium.eot');
-    src: url('/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Gotham-Medium.woff') format('woff'),
-         url('/fonts/Gotham-Medium.ttf') format('truetype'),
-         url('/fonts/Gotham-Medium.svg#gothambook') format('svg');
+    src: url('https://terralemon.nl/fonts/Gotham-Medium.eot');
+    src: url('https://terralemon.nl/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+         url('https://terralemon.nl/fonts/Gotham-Medium.woff') format('woff'),
+         url('https://terralemon.nl/fonts/Gotham-Medium.ttf') format('truetype'),
+         url('https://terralemon.nl/fonts/Gotham-Medium.svg#gothambook') format('svg');
 }
 
 @font-face {
     font-family: 'Gotham-Bold';
-    src: url('/fonts/Gotham-Bold.eot');
-    src: url('/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Gotham-Bold.woff') format('woff'),
-         url('/fonts/Gotham-Bold.ttf') format('truetype');
+    src: url('https://terralemon.nl/fonts/Gotham-Bold.eot');
+    src: url('https://terralemon.nl/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+         url('https://terralemon.nl/fonts/Gotham-Bold.woff') format('woff'),
+         url('https://terralemon.nl/fonts/Gotham-Bold.ttf') format('truetype');
 }
 
 

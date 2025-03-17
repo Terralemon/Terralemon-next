@@ -22,28 +22,28 @@
     font-family: "Object Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/tno/fonts/ObjectSans/PPObjectSans-Regular.otf") format("opentype"), url("/fonts/tno/fonts/ObjectSans/PPObjectSans-Regular.woff2") format("woff2"), url("/fonts/tno/fonts/ObjectSans/PPObjectSans-Regular.woff") format("woff"), url("/fonts/tno/fonts/ObjectSans/PPObjectSans-Regular.ttf") format("truetype")
+    src: url("https://terralemon.nl/fonts/tno/fonts/ObjectSans/PPObjectSans-Regular.otf") format("opentype"), url("https://terralemon.nl/fonts/tno/fonts/ObjectSans/PPObjectSans-Regular.woff2") format("woff2"), url("https://terralemon.nl/fonts/tno/fonts/ObjectSans/PPObjectSans-Regular.woff") format("woff"), url("https://terralemon.nl/fonts/tno/fonts/ObjectSans/PPObjectSans-Regular.ttf") format("truetype")
 }
 
 @font-face {
     font-family: "Object Sans";
     font-style: normal;
     font-weight: 800;
-    src: url("/fonts/tno/fonts/ObjectSans/ObjectSans-Bold.otf") format("opentype"), url("/fonts/tno/fonts/ObjectSans/ObjectSans-Bold.woff2") format("woff2"), url("/fonts/tno/fonts/ObjectSans/ObjectSans-Bold.woff") format("woff")
+    src: url("https://terralemon.nl/fonts/tno/fonts/ObjectSans/ObjectSans-Bold.otf") format("opentype"), url("https://terralemon.nl/fonts/tno/fonts/ObjectSans/ObjectSans-Bold.woff2") format("woff2"), url("https://terralemon.nl/fonts/tno/fonts/ObjectSans/ObjectSans-Bold.woff") format("woff")
 }
 
 @font-face {
     font-family: "FS Me";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/tno/fonts/FSMe/FSMe-Light.ttf") format("opentype")
+    src: url("https://terralemon.nl/fonts/tno/fonts/FSMe/FSMe-Light.ttf") format("opentype")
 }
 
 @font-face {
     font-family: "FS Me";
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/tno/fonts/FSMe/FSMePro-Bold.otf") format("opentype")
+    src: url("https://terralemon.nl/fonts/tno/fonts/FSMe/FSMePro-Bold.otf") format("opentype")
 }
 
 body { font-family: 'FS Me', sans-serif; color: var(--tno-inkt); }
