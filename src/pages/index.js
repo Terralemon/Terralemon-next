@@ -203,9 +203,9 @@ export default function Home() {
             <div className="col-md-12 col-lg-8">
               <Link href="/cases/tno-unboxed" className="card card_case card-hover w-100 border-0 bg-dark text-white position-relative overflow-hidden h-100">
                 <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                  <img src="/videos/_medium/TNO-UB-project-image-5.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Unboxed" />
-                  <video poster="/videos/_medium/TNO-UB-project-image-5.jpg" className="lazy w-100 h-100 object-fit-cover" loop muted>
-                    <source data-src="/videos/250113_Unboxed.mov" type="video/mp4" />
+                  <img src="https://terralemon.nl/videos/_medium/TNO-UB-project-image-5.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Unboxed" />
+                  <video poster="https://terralemon.nl/videos/_medium/TNO-UB-project-image-5.jpg" className="lazy w-100 h-100 object-fit-cover" loop muted>
+                    <source data-src="https://terralemon.nl/videos/250113_Unboxed.mov" type="video/mp4" />
                   </video>
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                 </div>

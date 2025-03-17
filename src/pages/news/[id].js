@@ -47,7 +47,7 @@ const newsItems = [
       <p>De Dutch Design Week vindt plaats van 21 tot 29 oktober. U kunt ons vinden in de Innovation Hall, stand 42.</p>
     `,
     date: '10 januari 2023',
-    image: '/img/news/news3.jpg',
+    image: 'https://terralemon.nl/img/news/news3.jpg',
     categories: ['events']
   },
   {
@@ -67,7 +67,7 @@ const newsItems = [
       <p>De resultaten van dit project hebben alle verwachtingen overtroffen, met een significante toename in betrokkenheid op de site en positieve feedback van alle stakeholders.</p>
     `,
     date: '5 december 2022',
-    image: '/img/news/news4.jpg',
+    image: 'https://terralemon.nl/img/news/news4.jpg',
     categories: ['cases']
   },
   {
@@ -88,7 +88,7 @@ const newsItems = [
       <p>Plaatsen zijn beperkt, dus schrijf je snel in via het contactformulier op onze website.</p>
     `,
     date: '22 november 2022',
-    image: '/img/news/news5.jpg',
+    image: 'https://terralemon.nl/img/news/news5.jpg',
     categories: ['events']
   },
   {
@@ -107,7 +107,7 @@ const newsItems = [
       <p>De eerste projecten onder dit partnership zijn al in ontwikkeling en zullen in de komende maanden worden gelanceerd. We kijken ernaar uit om de resultaten van deze samenwerking te delen.</p>
     `,
     date: '15 oktober 2022',
-    image: '/img/news/news6.jpg',
+    image: 'https://terralemon.nl/img/news/news6.jpg',
     categories: ['updates']
   }
 ];
