@@ -4,17 +4,17 @@ import Link from 'next/link';
 export default function About() {
   // Lijst met logo's van klanten
   const clients = [
-    { id: 'avrotros', name: 'AVROTROS', logo: '/img/clients/_small/avrotros_logo.png' },
-    { id: 'kro-ncrv', name: 'KRO-NCRV', logo: '/img/clients/_small/kro-ncrv_logo.png' },
-    { id: 'npo', name: 'NPO', logo: '/img/clients/_small/npo_logo.png' },
-    { id: 'nfu', name: 'NFU', logo: '/img/clients/_small/nfu_logo.png' },
-    { id: 'tno', name: 'TNO', logo: '/img/clients/_small/tno_logo.png' },
-    { id: 'ing', name: 'ING', logo: '/img/clients/_small/ing_logo.png' },
-    { id: 'minezk', name: 'Ministerie van Economische Zaken', logo: '/img/clients/_small/minezk_logo.png', colSize: 3 },
-    { id: 'foodvalley', name: 'Foodvalley', logo: '/img/clients/_small/foodvalley.png', colSize: 3 },
-    { id: 'pbl', name: 'Planbureau voor de leefomgeving', logo: '/img/clients/_small/Planbureau_voor_de_leefomgeving.png', colSize: 3 },
-    { id: 'go', name: 'GO! Kinderopvang', logo: '/img/clients/_small/go-kinderopvang_logo.png', colSize: 3 },
-    { id: 'pcsi', name: 'PCSI', logo: '/img/clients/_small/logo-pcsi.png', colSize: 3 }
+    { id: 'avrotros', name: 'AVROTROS', logo: 'https://terralemon.nl/img/clients/_small/avrotros_logo.png' },
+    { id: 'kro-ncrv', name: 'KRO-NCRV', logo: 'https://terralemon.nl/img/clients/_small/kro-ncrv_logo.png' },
+    { id: 'npo', name: 'NPO', logo: 'https://terralemon.nl/img/clients/_small/npo_logo.png' },
+    { id: 'nfu', name: 'NFU', logo: 'https://terralemon.nl/img/clients/_small/nfu_logo.png' },
+    { id: 'tno', name: 'TNO', logo: 'https://terralemon.nl/img/clients/_small/tno_logo.png' },
+    { id: 'ing', name: 'ING', logo: 'https://terralemon.nl/img/clients/_small/ing_logo.png' },
+    { id: 'minezk', name: 'Ministerie van Economische Zaken', logo: 'https://terralemon.nl/img/clients/_small/minezk_logo.png', colSize: 3 },
+    { id: 'foodvalley', name: 'Foodvalley', logo: 'https://terralemon.nl/img/clients/_small/foodvalley.png', colSize: 3 },
+    { id: 'pbl', name: 'Planbureau voor de leefomgeving', logo: 'https://terralemon.nl/img/clients/_small/Planbureau_voor_de_leefomgeving.png', colSize: 3 },
+    { id: 'go', name: 'GO! Kinderopvang', logo: 'https://terralemon.nl/img/clients/_small/go-kinderopvang_logo.png', colSize: 3 },
+    { id: 'pcsi', name: 'PCSI', logo: 'https://terralemon.nl/img/clients/_small/logo-pcsi.png', colSize: 3 }
   ];
 
   return (
@@ -88,7 +88,7 @@ export default function About() {
               <p>We werken voor grote en kleine opdrachtgevers en hebben expertise in verschillende markten en domeinen.</p>
             </div>
             <div className="col-lg-6">
-              <img src="/img/general/team.jpg" alt="Terralemon Team" className="img-fluid rounded" />
+              <img src="https://terralemon.nl/img/general/team.jpg" alt="Terralemon Team" className="img-fluid rounded" />
             </div>
           </div>
         </div>

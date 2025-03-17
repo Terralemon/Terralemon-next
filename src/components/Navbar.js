@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="container">
         <Link href="/" className="navbar-brand">
           <div className="p-2 m-0">
-            <img className="pb-1 px-2" src="/img/general/terralemon.svg" alt="Hi, wij zijn Terralemon" />
+            <img className="pb-1 px-2" src="https://terralemon.nl/img/general/terralemon.svg" alt="Hi, wij zijn Terralemon" />
           </div>
         </Link>
         <button 
@@ -74,9 +74,9 @@ export default function Navbar() {
 
               <Link href="/cases/tno-unboxed" className="card card_case card-ripple-js w-100 border-0 bg-dark text-white">
                 <div className="card-frame overflow-hidden">
-                  <img src="/videos/_medium/TNO-UB-project-image-5.jpg" className="position-absolute object-fit-contain w-100" alt="TNO Unboxed" />
-                  <video poster="/videos/_medium/TNO-UB-project-image-5.jpg" className="card-img-top lazy" loop muted>
-                    <source data-src="/videos/250113_Unboxed.mov" type="video/mp4" />
+                  <img src="https://terralemon.nl/videos/_medium/TNO-UB-project-image-5.jpg" className="position-absolute object-fit-contain w-100" alt="TNO Unboxed" />
+                  <video poster="https://terralemon.nl/videos/_medium/TNO-UB-project-image-5.jpg" className="card-img-top lazy" loop muted>
+                    <source data-src="https://terralemon.nl/videos/250113_Unboxed.mov" type="video/mp4" />
                   </video>
                 </div>
 

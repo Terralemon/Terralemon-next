@@ -114,7 +114,7 @@ export default function Home() {
                 <div className="swiper-slide">
                   <Link href="/cases/tno-unboxed" className="card card_project card-hover border-0 h-100">
                     <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                      <img src="/img/projects/_webp/medium_250115-TNO-NL-AI_.jpg_webp_40cd750bba9870f18aada2478b24840a.webp" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Unboxed – GPT-NL" />
+                      <img src="https://terralemon.nl/img/projects/_webp/medium_250115-TNO-NL-AI_.jpg_webp_40cd750bba9870f18aada2478b24840a.webp" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Unboxed – GPT-NL" />
                     </div>
                     <div className="card-body px-0 pt-3">
                       <span className="badge tl-bg-green text-dark mb-2">TNO</span>
@@ -126,7 +126,7 @@ export default function Home() {
                 <div className="swiper-slide">
                   <Link href="/cases/biobased-plastics" className="card card_project card-hover border-0 h-100">
                     <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                      <img src="/img/cases/case2.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Biobased Plastics" />
+                      <img src="https://terralemon.nl/img/cases/case2.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Biobased Plastics" />
                     </div>
                     <div className="card-body px-0 pt-3">
                       <span className="badge tl-bg-green text-dark mb-2">TNO</span>
@@ -138,7 +138,7 @@ export default function Home() {
                 <div className="swiper-slide">
                   <Link href="/cases/linxis" className="card card_project card-hover border-0 h-100">
                     <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                      <img src="/img/cases/case3.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding LinXis Biopharmaceuticals website" />
+                      <img src="https://terralemon.nl/img/cases/case3.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding LinXis Biopharmaceuticals website" />
                     </div>
                     <div className="card-body px-0 pt-3">
                       <span className="badge tl-bg-green text-dark mb-2">LinXis</span>
@@ -150,7 +150,7 @@ export default function Home() {
                 <div className="swiper-slide">
                   <Link href="/cases/sustainable-geo-energy" className="card card_project card-hover border-0 h-100">
                     <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                      <img src="/img/cases/case4.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding Rijswijk Center Sustainable Geo-energy" />
+                      <img src="https://terralemon.nl/img/cases/case4.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding Rijswijk Center Sustainable Geo-energy" />
                     </div>
                     <div className="card-body px-0 pt-3">
                       <span className="badge tl-bg-green text-dark mb-2">TNO</span>
@@ -162,7 +162,7 @@ export default function Home() {
                 <div className="swiper-slide">
                   <Link href="/cases/tno-dit-is-onze-tijd" className="card card_project card-hover border-0 h-100">
                     <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                      <img src="/img/cases/case5.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Dit is onze tijd #2" />
+                      <img src="https://terralemon.nl/img/cases/case5.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Dit is onze tijd #2" />
                     </div>
                     <div className="card-body px-0 pt-3">
                       <span className="badge tl-bg-green text-dark mb-2">TNO</span>
@@ -174,7 +174,7 @@ export default function Home() {
                 <div className="swiper-slide">
                   <Link href="/cases/tno-dit-is-onze-tijd" className="card card_project card-hover border-0 h-100">
                     <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                      <img src="/img/cases/case6.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Dit is onze tijd #1" />
+                      <img src="https://terralemon.nl/img/cases/case6.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Dit is onze tijd #1" />
                     </div>
                     <div className="card-body px-0 pt-3">
                       <span className="badge tl-bg-green text-dark mb-2">TNO</span>
@@ -203,9 +203,9 @@ export default function Home() {
             <div className="col-md-12 col-lg-8">
               <Link href="/cases/tno-unboxed" className="card card_case card-hover w-100 border-0 bg-dark text-white position-relative overflow-hidden h-100">
                 <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                  <img src="/videos/_medium/TNO-UB-project-image-5.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Unboxed" />
-                  <video poster="/videos/_medium/TNO-UB-project-image-5.jpg" className="lazy w-100 h-100 object-fit-cover" loop muted>
-                    <source data-src="/videos/250113_Unboxed.mov" type="video/mp4" />
+                  <img src="https://terralemon.nl/videos/_medium/TNO-UB-project-image-5.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Unboxed" />
+                  <video poster="https://terralemon.nl/videos/_medium/TNO-UB-project-image-5.jpg" className="lazy w-100 h-100 object-fit-cover" loop muted>
+                    <source data-src="https://terralemon.nl/videos/250113_Unboxed.mov" type="video/mp4" />
                   </video>
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                 </div>
@@ -221,9 +221,9 @@ export default function Home() {
             <div className="col-md-6 col-lg-4">
               <Link href="/cases/tno-energy-materials" className="card card_case card-hover w-100 border-0 bg-dark text-white position-relative overflow-hidden h-100">
                 <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                  <img src="/img/cases/case2.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Energy & Materials Transition" />
-                  <video poster="/img/cases/case2.jpg" className="lazy w-100 h-100 object-fit-cover" loop muted>
-                    <source data-src="/videos/210315-WarmingUP.mov" type="video/mp4" />
+                  <img src="https://terralemon.nl/img/cases/case2.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Energy & Materials Transition" />
+                  <video poster="https://terralemon.nl/img/cases/case2.jpg" className="lazy w-100 h-100 object-fit-cover" loop muted>
+                    <source data-src="https://terralemon.nl/videos/210315-WarmingUP.mov" type="video/mp4" />
                   </video>
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                 </div>
@@ -239,7 +239,7 @@ export default function Home() {
             <div className="col-md-6 col-lg-4">
               <Link href="/cases/tno-healthy-living" className="card card_case card-hover w-100 border-0 bg-dark text-white position-relative overflow-hidden h-100">
                 <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                  <img src="/img/cases/case3.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Healthy Living & Work" />
+                  <img src="https://terralemon.nl/img/cases/case3.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Healthy Living & Work" />
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                 </div>
 
@@ -254,7 +254,7 @@ export default function Home() {
             <div className="col-md-6 col-lg-4">
               <Link href="/cases/biobased-plastics" className="card card_case card-hover w-100 border-0 bg-dark text-white position-relative overflow-hidden h-100">
                 <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                  <img src="/img/cases/case4.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Biobased Plastics" />
+                  <img src="https://terralemon.nl/img/cases/case4.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Biobased Plastics" />
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                 </div>
 
@@ -269,7 +269,7 @@ export default function Home() {
             <div className="col-md-6 col-lg-4">
               <Link href="/cases/linxis" className="card card_case card-hover w-100 border-0 bg-dark text-white position-relative overflow-hidden h-100">
                 <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                  <img src="/img/cases/case5.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="LinXis" />
+                  <img src="https://terralemon.nl/img/cases/case5.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="LinXis" />
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                 </div>
 
