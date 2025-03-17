@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 import Link from 'next/link';
 import useLazyVideo from '../../components/LazyVideo';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 // Complete casesData database voor alle cases
 const casesData = {
@@ -326,17 +326,58 @@ const casesData = {
   }
 };
 
+// Gerelateerde projecten data (normaal zou dit uit een API komen)
+const relatedProjectsData = {
+  'tno-unboxed': ['tno-energy-materials-transition', 'tno-healthy-living-work', 'tno-ditisonzetijd'],
+  'tno-energy-materials-transition': ['tno-unboxed', 'tno-healthy-living-work', 'tno-mobility-built-environment'],
+  'tno-healthy-living-work': ['tno-unboxed', 'tno-energy-materials-transition', 'wilhelmina-ziekenhuis'],
+  'linxis': ['antoni-van-leeuwenhoek', 'tno-healthy-living-work', 'citrienfonds'],
+  'tno-ditisonzetijd': ['tno-unboxed', 'tno-interne-campagnes', 'tno-energy-materials-transition'],
+  'tno-mobility-built-environment': ['tno-energy-materials-transition', 'tno-ict-strategy-policy', 'artificiele-intelligentie'],
+  'tno-ict-strategy-policy': ['tno-mobility-built-environment', 'cyber-security', 'artificiele-intelligentie'],
+  'npo-zappelin-app': ['zappelin', 'zin-in-zappelin', 'boele-de-bever-voor-heutinkgroep'],
+  'zappelin': ['npo-zappelin-app', 'zin-in-zappelin', 'boele-de-bever-voor-heutinkgroep'],
+  'zin-in-zappelin': ['zappelin', 'npo-zappelin-app', 'boele-de-bever-voor-heutinkgroep'],
+  'tno-interne-campagnes': ['tno-ditisonzetijd', 'tno-unboxed', 'tno-strategische-analyses-beleid'],
+  'ing-think': ['pcsi', 'vuyk-engineering', 'tno-strategische-analyses-beleid'],
+  'imaging-center-adore': ['antoni-van-leeuwenhoek', 'wilhelmina-ziekenhuis', 'citrienfonds'],
+  'citrienfonds': ['imaging-center-adore', 'antoni-van-leeuwenhoek', 'wilhelmina-ziekenhuis'],
+  'artificiele-intelligentie': ['cyber-security', 'tno-ict-strategy-policy', 'tno-mobility-built-environment'],
+  'go-kinderopvang': ['boele-de-bever-voor-heutinkgroep', 'zin-in-zappelin', 'zappelin'],
+  'pcsi': ['cyber-security', 'ing-think', 'tno-ict-strategy-policy'],
+  'cyber-security': ['pcsi', 'artificiele-intelligentie', 'tno-ict-strategy-policy'],
+  'wilhelmina-ziekenhuis': ['antoni-van-leeuwenhoek', 'imaging-center-adore', 'citrienfonds'],
+  'antoni-van-leeuwenhoek': ['wilhelmina-ziekenhuis', 'imaging-center-adore', 'citrienfonds'],
+  'nfu-nfukwaliteit': ['citrienfonds', 'antoni-van-leeuwenhoek', 'wilhelmina-ziekenhuis'],
+  'vuyk-engineering': ['ing-think', 'biorizon', 'tno-strategische-analyses-beleid'],
+  'tno-strategische-analyses-beleid': ['tno-interne-campagnes', 'vuyk-engineering', 'ing-think'],
+  'biorizon': ['vuyk-engineering', 'tno-energy-materials-transition', 'tno-strategische-analyses-beleid'],
+  'boele-de-bever-voor-heutinkgroep': ['go-kinderopvang', 'zin-in-zappelin', 'zappelin']
+};
+
+// Sectie definities voor interne links
+const sectionDefinitions = [
+  { id: 'overzicht', title: 'Overzicht' },
+  { id: 'details', title: 'Project details' },
+  { id: 'media', title: 'Media' },
+  { id: 'gerelateerd', title: 'Gerelateerde projecten' }
+];
+
 export default function CaseDetail() {
   const router = useRouter();
   const { id } = router.query;
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('overzicht');
   
   const caseData = id && casesData[id];
+  const relatedProjects = id && relatedProjectsData[id]?.map(relId => casesData[relId]) || [];
 
   // Gebruik de hook voor lazy-loading video's
   useLazyVideo();
 
-  // Functie om lazy-loaded iframes te activeren
+  // Functie om lazy-loaded iframes te activeren en scroll naar sectie
   useEffect(() => {
+    // Lazy loading voor iframes en afbeeldingen
     const lazyIframes = document.querySelectorAll('iframe[data-src]');
     if (lazyIframes.length) {
       lazyIframes.forEach(iframe => {
@@ -346,7 +387,6 @@ export default function CaseDetail() {
       });
     }
     
-    // Lazy load images
     const lazyImages = document.querySelectorAll('img[data-src]');
     if (lazyImages.length) {
       lazyImages.forEach(img => {
@@ -355,7 +395,53 @@ export default function CaseDetail() {
         }
       });
     }
+
+    // Scroll naar sectie als er een hash is
+    if (window.location.hash) {
+      const id = window.location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        setActiveSection(id);
+      }
+    }
+
+    // Observeer secties voor actieve staat
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    sectionDefinitions.forEach(section => {
+      const element = document.getElementById(section.id);
+      if (element) observer.observe(element);
+    });
+
+    return () => {
+      sectionDefinitions.forEach(section => {
+        const element = document.getElementById(section.id);
+        if (element) observer.unobserve(element);
+      });
+    };
   }, [id]);
+
+  // Functie om dropdown te togglen
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  // Functie om naar een sectie te scrollen
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setActiveSection(sectionId);
+      setDropdownOpen(false);
+    }
+  };
 
   // Als de pagina nog aan het laden is of de case niet gevonden is
   if (!id || !caseData) {
@@ -411,7 +497,7 @@ export default function CaseDetail() {
       </div>
 
       {/* Header met titel */}
-      <div className="container">
+      <div className="container" id="overzicht">
         <div className="row">
           <div className="col-md-8 offset-md-2 text-center">
             <h1 className="display-3 mt-3 mt-lg-5">{caseData.subtitle}</h1>
@@ -424,6 +510,36 @@ export default function CaseDetail() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Navigatie Pulldown */}
+      <div className="container sticky-top bg-white py-2 shadow-sm" style={{ top: '70px', zIndex: 100 }}>
+        <div className="row">
+          <div className="col-12">
+            <div className="dropdown">
+              <button 
+                className="btn btn-outline-primary dropdown-toggle w-100" 
+                type="button" 
+                onClick={toggleDropdown}
+                aria-expanded={dropdownOpen}
+              >
+                {sectionDefinitions.find(s => s.id === activeSection)?.title || 'Navigeer'}
+              </button>
+              <ul className={`dropdown-menu w-100 ${dropdownOpen ? 'show' : ''}`}>
+                {sectionDefinitions.map(section => (
+                  <li key={section.id}>
+                    <button 
+                      className={`dropdown-item ${activeSection === section.id ? 'active' : ''}`} 
+                      onClick={() => scrollToSection(section.id)}
+                    >
+                      {section.title}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -449,7 +565,7 @@ export default function CaseDetail() {
       </div>
 
       {/* Project informatie */}
-      <div className="container-fluid px-0 pb-5 pb-sm-5 bg-light shadow-lg">
+      <div className="container-fluid px-0 pb-5 pb-sm-5 bg-light shadow-lg" id="details">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -488,7 +604,10 @@ export default function CaseDetail() {
           </div>
 
           {/* Media gallery */}
-          <div className="row">
+          <div className="row" id="media">
+            <div className="col-12">
+              <h3 className="text-center my-4">Media</h3>
+            </div>
             {/* Als er een video is */}
             {caseData.video && (
               <section className="col-md-10 offset-md-1 my-3">
@@ -509,8 +628,47 @@ export default function CaseDetail() {
         </div>
       </div>
 
+      {/* Gerelateerde projecten */}
+      {relatedProjects.length > 0 && (
+        <div className="container-fluid py-5 bg-white" id="gerelateerd">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 text-center mb-4">
+                <h2 className="display-5">Gerelateerde projecten</h2>
+                <p className="lead">Ontdek meer van ons werk</p>
+              </div>
+            </div>
+            <div className="row">
+              {relatedProjects.map((project, index) => (
+                <div className="col-md-4 mb-4" key={index}>
+                  <div className="card h-100 shadow-sm">
+                    <img 
+                      src={project.image} 
+                      className="card-img-top" 
+                      alt={project.title} 
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">{project.title}</h5>
+                      <p className="card-text text-truncate">{project.subtitle}</p>
+                    </div>
+                    <div className="card-footer bg-white border-0">
+                      <Link 
+                        href={`/cases/${Object.keys(casesData).find(key => casesData[key] === project)}`}
+                        className="btn btn-outline-primary"
+                      >
+                        Bekijk project
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* CTA */}
-      <section className="py-5 bg-white">
+      <section className="py-5 bg-light">
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-lg-8">
