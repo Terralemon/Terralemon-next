@@ -112,25 +112,25 @@ export default function Home() {
             <div className="swiper swiper_home_projects">
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
-                  <Link href="/cases/tno-unboxed" className="card card_project card-hover border-0 h-100">
+                  <Link href="/cases/tno-unboxed-gpt-nl" className="card card_project card-hover border-0 h-100">
                     <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                      <img src="/img/projects/_webp/medium_250115-TNO-NL-AI_.jpg_webp_40cd750bba9870f18aada2478b24840a.webp" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Unboxed – GPT-NL" />
+                      <img src="https://terralemon.nl/img/projects/_webp/medium_250115-TNO-NL-AI_.jpg_webp_40cd750bba9870f18aada2478b24840a.webp" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Unboxed – GPT-NL" />
                     </div>
                     <div className="card-body px-0 pt-3">
-                      <span className="badge tl-bg-green text-dark mb-2">TNO</span>
-                      <h4 className="card-title text-dark fw-bold">Een AI model binnen onze Nederlandse kaders</h4>
+                      <span className="badge tl-bg-green text-dark mb-2">Tech</span>
+                      <h4 className="card-title text-dark fw-bold">TNO Unboxed – GPT-NL</h4>
                     </div>
                   </Link>
                 </div>
                 
                 <div className="swiper-slide">
-                  <Link href="/cases/biobased-plastics" className="card card_project card-hover border-0 h-100">
+                  <Link href="/cases/tno-biobased-plastics" className="card card_project card-hover border-0 h-100">
                     <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                      <img src="/img/cases/case2.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Biobased Plastics" />
+                      <img src="https://terralemon.nl/img/cases/case2.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Biobased Plastics" />
                     </div>
                     <div className="card-body px-0 pt-3">
-                      <span className="badge tl-bg-green text-dark mb-2">TNO</span>
-                      <h4 className="card-title text-dark fw-bold">In 3 stappen naar Biobased Plastics</h4>
+                      <span className="badge tl-bg-green text-dark mb-2">Duurzaamheid</span>
+                      <h4 className="card-title text-dark fw-bold">TNO Biobased Plastics</h4>
                     </div>
                   </Link>
                 </div>
@@ -138,23 +138,35 @@ export default function Home() {
                 <div className="swiper-slide">
                   <Link href="/cases/linxis" className="card card_project card-hover border-0 h-100">
                     <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                      <img src="/img/cases/case3.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding LinXis Biopharmaceuticals website" />
+                      <img src="https://terralemon.nl/img/cases/case3.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding LinXis Biopharmaceuticals website" />
                     </div>
                     <div className="card-body px-0 pt-3">
-                      <span className="badge tl-bg-green text-dark mb-2">LinXis</span>
-                      <h4 className="card-title text-dark fw-bold">Vernieuwde site LinXis</h4>
+                      <span className="badge tl-bg-green text-dark mb-2">Medisch</span>
+                      <h4 className="card-title text-dark fw-bold">LinXis Biopharmaceuticals</h4>
                     </div>
                   </Link>
                 </div>
                 
                 <div className="swiper-slide">
-                  <Link href="/cases/sustainable-geo-energy" className="card card_project card-hover border-0 h-100">
+                  <Link href="/cases/rcsg" className="card card_project card-hover border-0 h-100">
                     <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                      <img src="/img/cases/case4.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding Rijswijk Center Sustainable Geo-energy" />
+                      <img src="https://terralemon.nl/img/cases/case4.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding Rijswijk Center Sustainable Geo-energy" />
                     </div>
                     <div className="card-body px-0 pt-3">
-                      <span className="badge tl-bg-green text-dark mb-2">TNO</span>
-                      <h4 className="card-title text-dark fw-bold">Innovatie voor ondergrondse technologische toepassingen voor de energietransitie</h4>
+                      <span className="badge tl-bg-green text-dark mb-2">Energie</span>
+                      <h4 className="card-title text-dark fw-bold">Rijswijk Center Sustainable Geo-energy</h4>
+                    </div>
+                  </Link>
+                </div>
+                
+                <div className="swiper-slide">
+                  <Link href="/cases/tno-dit-is-onze-tijd-2" className="card card_project card-hover border-0 h-100">
+                    <div className="card-frame ratio ratio-16x9 overflow-hidden">
+                      <img src="https://terralemon.nl/img/cases/case5.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Dit is onze tijd #2" />
+                    </div>
+                    <div className="card-body px-0 pt-3">
+                      <span className="badge tl-bg-green text-dark mb-2">Tech</span>
+                      <h4 className="card-title text-dark fw-bold">TNO Dit is onze tijd #2</h4>
                     </div>
                   </Link>
                 </div>
@@ -162,23 +174,11 @@ export default function Home() {
                 <div className="swiper-slide">
                   <Link href="/cases/tno-dit-is-onze-tijd" className="card card_project card-hover border-0 h-100">
                     <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                      <img src="/img/cases/case5.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Dit is onze tijd #2" />
+                      <img src="https://terralemon.nl/img/cases/case6.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Dit is onze tijd #1" />
                     </div>
                     <div className="card-body px-0 pt-3">
-                      <span className="badge tl-bg-green text-dark mb-2">TNO</span>
-                      <h4 className="card-title text-dark fw-bold">#2 | Nederland onmisbaar maken in laser-satellietcommunicatie</h4>
-                    </div>
-                  </Link>
-                </div>
-                
-                <div className="swiper-slide">
-                  <Link href="/cases/tno-dit-is-onze-tijd" className="card card_project card-hover border-0 h-100">
-                    <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                      <img src="/img/cases/case6.jpg" className="card-img-top object-fit-cover w-100 h-100" alt="Afbeelding TNO Dit is onze tijd #1" />
-                    </div>
-                    <div className="card-body px-0 pt-3">
-                      <span className="badge tl-bg-green text-dark mb-2">TNO</span>
-                      <h4 className="card-title text-dark fw-bold">#1 | Medische wearables voor betaalbare zorg</h4>
+                      <span className="badge tl-bg-green text-dark mb-2">Tech</span>
+                      <h4 className="card-title text-dark fw-bold">TNO Dit is onze tijd #1</h4>
                     </div>
                   </Link>
                 </div>
@@ -221,17 +221,17 @@ export default function Home() {
             <div className="col-md-6 col-lg-4">
               <Link href="/cases/tno-energy-materials" className="card card_case card-hover w-100 border-0 bg-dark text-white position-relative overflow-hidden h-100">
                 <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                  <img src="/img/cases/case2.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Energy & Materials Transition" />
-                  <video poster="/img/cases/case2.jpg" className="lazy w-100 h-100 object-fit-cover" loop muted>
-                    <source data-src="/videos/210315-WarmingUP.mov" type="video/mp4" />
+                  <img src="https://terralemon.nl/img/cases/case2.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Energy & Materials Transition" />
+                  <video poster="https://terralemon.nl/img/cases/case2.jpg" className="lazy w-100 h-100 object-fit-cover" loop muted>
+                    <source data-src="https://terralemon.nl/videos/210315-WarmingUP.mov" type="video/mp4" />
                   </video>
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                 </div>
 
                 <div className="card-img-overlay p-4 d-flex flex-column justify-content-end">
-                  <span className="badge tl-bg-green text-dark mb-2">Video</span>
+                  <span className="badge tl-bg-green text-dark mb-2">Energie</span>
                   <p className="card-text fw-bold mb-2 h5">TNO Energy &amp; Materials Transition</p>
-                  <h3 className="card-title fs-4 fw-light text-white mt-0">Klimaatverandering vraagt om duurzaamheid in energiesystemen, industrie en materialen</h3>
+                  <h3 className="card-title fs-4 fw-light text-white mt-0">Innovatieve technologieën voor een duurzame energievoorziening</h3>
                 </div>
               </Link>
             </div>
@@ -239,7 +239,7 @@ export default function Home() {
             <div className="col-md-6 col-lg-4">
               <Link href="/cases/tno-healthy-living" className="card card_case card-hover w-100 border-0 bg-dark text-white position-relative overflow-hidden h-100">
                 <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                  <img src="/img/cases/case3.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Healthy Living & Work" />
+                  <img src="https://terralemon.nl/img/cases/case3.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Healthy Living & Work" />
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                 </div>
 
@@ -252,16 +252,16 @@ export default function Home() {
             </div>
             
             <div className="col-md-6 col-lg-4">
-              <Link href="/cases/biobased-plastics" className="card card_case card-hover w-100 border-0 bg-dark text-white position-relative overflow-hidden h-100">
+              <Link href="/cases/tno-biobased-plastics" className="card card_case card-hover w-100 border-0 bg-dark text-white position-relative overflow-hidden h-100">
                 <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                  <img src="/img/cases/case4.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Biobased Plastics" />
+                  <img src="https://terralemon.nl/img/cases/case4.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="TNO Biobased Plastics" />
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                 </div>
 
                 <div className="card-img-overlay p-4 d-flex flex-column justify-content-end">
-                  <span className="badge tl-bg-green text-dark mb-2">Video</span>
+                  <span className="badge tl-bg-green text-dark mb-2">Duurzaamheid</span>
                   <p className="card-text fw-bold mb-2 h5">TNO Biobased Plastics</p>
-                  <h3 className="card-title fs-4 fw-light text-white mt-0">In 3 stappen naar biobased plastics</h3>
+                  <h3 className="card-title fs-4 fw-light text-white mt-0">Visuele uitleg van de transitie naar biologisch afbreekbaar plastic</h3>
                 </div>
               </Link>
             </div>
@@ -269,14 +269,14 @@ export default function Home() {
             <div className="col-md-6 col-lg-4">
               <Link href="/cases/linxis" className="card card_case card-hover w-100 border-0 bg-dark text-white position-relative overflow-hidden h-100">
                 <div className="card-frame ratio ratio-16x9 overflow-hidden">
-                  <img src="/img/cases/case5.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="LinXis" />
+                  <img src="https://terralemon.nl/img/cases/case5.jpg" className="position-absolute object-fit-cover w-100 h-100" alt="LinXis" />
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                 </div>
 
                 <div className="card-img-overlay p-4 d-flex flex-column justify-content-end">
-                  <span className="badge tl-bg-green text-dark mb-2">Website</span>
+                  <span className="badge tl-bg-green text-dark mb-2">Medisch</span>
                   <p className="card-text fw-bold mb-2 h5">LinXis</p>
-                  <h3 className="card-title fs-4 fw-light text-white mt-0">Vernieuwde website voor LinXis</h3>
+                  <h3 className="card-title fs-4 fw-light text-white mt-0">Website en corporate identity voor biotech bedrijf</h3>
                 </div>
               </Link>
             </div>

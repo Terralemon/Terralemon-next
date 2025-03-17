@@ -20,22 +20,21 @@ const newsItems = [
       <p>We nodigen je uit om de site te verkennen en feedback te geven. Dit is nog maar het begin - we hebben plannen om de komende maanden nog meer functies en inhoud toe te voegen.</p>
     `,
     date: '15 maart 2023',
-    image: '/img/news/news1.jpg',
+    image: 'https://terralemon.nl/img/news/news1.jpg',
     categories: ['updates']
   },
   {
-    id: 'tno-animation-award',
-    title: 'TNO Unboxed wint animatie award',
-    excerpt: 'Onze animatie voor TNO Unboxed is bekroond met een internationale prijs voor innovatieve animatie.',
+    id: 'tno-unboxed-ai-project',
+    title: 'TNO Unboxed: Nieuwe AI-project gelanceerd',
+    excerpt: 'We hebben een nieuw animatieproject afgerond voor TNO, waarin we hun belangrijke onderzoek naar AI-toepassingen visualiseren.',
     content: `
-      <p>We zijn trots om aan te kondigen dat onze animatie voor het TNO Unboxed project is bekroond met een internationale prijs voor innovatieve animatie en storytelling.</p>
-      <p>De jury prees de combinatie van technische complexiteit en visuele helderheid in het overbrengen van complexe wetenschappelijke concepten aan een breed publiek.</p>
-      <p>"Terralemon heeft bewezen dat animatie een krachtig medium is voor kennisoverdracht en communicatie van geavanceerde technologische concepten", aldus de juryvoorzitter.</p>
-      <p>Het TNO Unboxed-project was een samenwerking tussen ons creatieve team en de wetenschappelijke experts van TNO, met als doel hun innovatieve onderzoek op een toegankelijke manier te presenteren.</p>
+      <p>We zijn trots om aan te kondigen dat we een nieuwe animatie hebben ontwikkeld voor TNO's Unboxed-serie, waarin we hun baanbrekende onderzoek naar AI-toepassingen visualiseren.</p>
+      <p>In deze animatie maken we complexe AI-concepten toegankelijk voor een breder publiek, met duidelijke visuele metaforen en precieze uitleg. Het project benadrukt hoe TNO werkt aan verantwoorde AI-toepassingen die voldoen aan Nederlandse en Europese waarden en wetgeving.</p>
+      <p>De animatie is te zien op de TNO website en via hun sociale mediakanalen.</p>
     `,
-    date: '28 februari 2023',
-    image: '/img/news/news2.jpg',
-    categories: ['awards', 'cases']
+    date: '22 februari 2023',
+    image: 'https://terralemon.nl/img/news/news2.jpg',
+    categories: ['projecten', 'animatie']
   },
   {
     id: 'terralemon-op-award-show',
