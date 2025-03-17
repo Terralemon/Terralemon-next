@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 import Link from 'next/link';
 import useLazyVideo from '../../components/LazyVideo';
+import { useEffect } from 'react';
 
 // Complete casesData database voor alle cases
 const casesData = {
@@ -334,6 +335,28 @@ export default function CaseDetail() {
   // Gebruik de hook voor lazy-loading video's
   useLazyVideo();
 
+  // Functie om lazy-loaded iframes te activeren
+  useEffect(() => {
+    const lazyIframes = document.querySelectorAll('iframe[data-src]');
+    if (lazyIframes.length) {
+      lazyIframes.forEach(iframe => {
+        if (iframe.dataset.src) {
+          iframe.src = iframe.dataset.src;
+        }
+      });
+    }
+    
+    // Lazy load images
+    const lazyImages = document.querySelectorAll('img[data-src]');
+    if (lazyImages.length) {
+      lazyImages.forEach(img => {
+        if (img.dataset.src) {
+          img.src = img.dataset.src;
+        }
+      });
+    }
+  }, [id]);
+
   // Als de pagina nog aan het laden is of de case niet gevonden is
   if (!id || !caseData) {
     return (
@@ -345,71 +368,149 @@ export default function CaseDetail() {
     );
   }
 
+  // Bepaal expertises op basis van services
+  const expertises = caseData.services.map(service => {
+    const serviceMap = {
+      'Strategie': 'strategie',
+      'Video productie': 'film',
+      'Website ontwerp': 'website',
+      'Social media': 'campagne',
+      'Animatie': 'animatie',
+      'Visual design': 'visuele-identiteit',
+      'Content strategie': 'content-strategie',
+      'Branding': 'branding',
+      'Website ontwikkeling': 'website',
+      'UX/UI design': 'website',
+      'Concept ontwikkeling': 'concept',
+      'Character design': 'karakter-design',
+      'Art direction': 'art-direction',
+      'Interne communicatie': 'interne-communicatie',
+      'Campagne ontwikkeling': 'campagne',
+      'Tech visualisatie': 'tech-visualisatie',
+      'Medical visualization': 'medische-visualisatie',
+      'Visual storytelling': 'storytelling',
+      'Infographics': 'infographics',
+      'Logo design': 'logo-design',
+      'Decor ontwerp': 'decor-ontwerp',
+      'Vormgeving': 'vormgeving'
+    };
+    return serviceMap[service] || service.toLowerCase().replace(/\s+/g, '-');
+  });
+
   return (
     <Layout title={caseData.title} description={caseData.subtitle}>
-      {/* Header */}
-      <section className="py-5 mt-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8">
-              <Link href="/cases" className="btn btn-outline-primary mb-4">
-                ← Terug naar cases
-              </Link>
-              <h1 className="mb-3">{caseData.title}</h1>
-              <p className="lead">{caseData.subtitle}</p>
-            </div>
+      {/* Back Button */}
+      <div className="container mt-4">
+        <div className="row">
+          <div className="col-12">
+            <Link href="/cases" className="btn btn-outline-primary mb-4">
+              ← Terug naar cases
+            </Link>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Featured Image/Video */}
-      <section className="pb-5">
+      {/* Header met titel */}
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8 offset-md-2 text-center">
+            <h1 className="display-3 mt-3 mt-lg-5">{caseData.subtitle}</h1>
+          </div>
+          <div className="col-md-12 mb-3 my-sm-3 text-center">
+            <ul className="list-group list-group-horizontal text-lowercase justify-content-center expertises">
+              {expertises.map((expertise, index) => (
+                <li className="list-group-item fs-small" key={index}>
+                  <a href={`/expertises/${expertise}`}>{caseData.services[index]}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Header image */}
+      <div className="container-fluid px-0 my-lg-3">      
+        <div className="image_wrapper">
+          <img 
+            src={caseData.image.replace('_medium', '_giant')} 
+            className="w-100 mb-3" 
+            alt={caseData.title} 
+          />
+        </div>
+      </div>
+
+      {/* Introductie tekst */}
+      <div className="container">      
+        <div className="row">
+          <div className="col-md-6 offset-md-3">
+            <div className="fs-3 my-lg-5" dangerouslySetInnerHTML={{ __html: caseData.description }} />
+          </div>
+        </div>
+      </div>
+
+      {/* Project informatie */}
+      <div className="container-fluid px-0 pb-5 pb-sm-5 bg-light shadow-lg">
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="card border-0 bg-dark">
-                <div className="card-frame overflow-hidden">
-                  <img src={caseData.image} className="w-100" alt={caseData.title} />
-                  {caseData.video && (
-                    <video poster={caseData.image} className="w-100 lazy" controls>
-                      <source data-src={caseData.video} type="video/mp4" />
-                    </video>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Content */}
-      <section className="py-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8">
-              <div dangerouslySetInnerHTML={{ __html: caseData.description }} />
-            </div>
-            <div className="col-md-4">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Project informatie</h5>
-                  <p><strong>Client:</strong> {caseData.client}</p>
-                  <p><strong>Jaar:</strong> {caseData.year}</p>
-                  <p><strong>Services:</strong></p>
-                  <ul>
-                    {caseData.services.map((service, index) => (
-                      <li key={index}>{service}</li>
+              <div className="row">
+                <section className="col-lg-8 offset-lg-2 mt-2 mb-3 text-center">
+                  <p className="pt-3 mb-0">{caseData.title}</p>
+                  <h2 className="display-4 mt-3 mb-lg-4">{caseData.subtitle}</h2>
+                  
+                  <ul className="list-group list-group-horizontal-lg text-lowercase justify-content-center expertises">
+                    {expertises.map((expertise, index) => (
+                      <li className="list-group-item bg-transparent" key={index}>
+                        <a href={`/expertises/${expertise}`}>{caseData.services[index]}</a>
+                      </li>
                     ))}
                   </ul>
-                </div>
+                </section>
               </div>
             </div>
+
+            {/* Verantwoordelijkheden */}
+            <section className="col-md-4 col-lg-2 order-last order-md-2 pt-3">
+              <small className="text-muted d-none d-md-block mb-2">{caseData.year}</small>
+              
+              <ul className="list-group list-group-flush deliverables">
+                <li className="list-group-item"><strong>Terralemon is verantwoordelijk voor</strong></li>
+                {caseData.services.map((service, index) => (
+                  <li className="list-group-item" key={index}>{service}</li>
+                ))}
+              </ul>
+            </section>
+
+            {/* Content */}
+            <section className="col-md-8 col-lg-6 offset-lg-3 mt-sm-3 mb-0 mb-md-3 fs-large">
+              <p className="lead" dangerouslySetInnerHTML={{ __html: caseData.description }} />
+            </section>
+          </div>
+
+          {/* Media gallery */}
+          <div className="row">
+            {/* Als er een video is */}
+            {caseData.video && (
+              <section className="col-md-10 offset-md-1 my-3">
+                <div className="d-flex justify-content-center">
+                  <div className="ratio ratio-16x9 mb-lg-4">
+                    <video 
+                      poster={caseData.image} 
+                      className="card-img-top lazy w-100" 
+                      controls
+                    >
+                      <source data-src={caseData.video} type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </section>
+            )}
           </div>
         </div>
-      </section>
+      </div>
 
       {/* CTA */}
-      <section className="py-5 bg-light">
+      <section className="py-5 bg-white">
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-lg-8">
