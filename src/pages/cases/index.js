@@ -11,15 +11,15 @@ export default function Cases() {
 
   // Lijst met industrieën voor de filter
   const industries = [
-    { id: 'all', name: 'Alle industrieën' },
-    { id: 'hightech', name: 'High-tech industrie' },
+    { id: 'all', name: 'Alle cases' },
     { id: 'duurzaamheid', name: 'Duurzaamheid' },
     { id: 'gezondheidszorg', name: 'Gezondheidszorg' },
+    { id: 'hightech', name: 'High-tech industrie' },
     { id: 'ict', name: 'ICT' },
     { id: 'omroepen', name: 'Omroepen' }
   ];
 
-  // Voorbeeld cases array met industrie tags
+  // Cases array gebaseerd op de statische pagina
   const cases = [
     {
       id: 'tno-unboxed',
@@ -31,44 +31,199 @@ export default function Cases() {
       size: 'large' // large voor col-lg-8, default voor col-lg-4
     },
     {
-      id: 'tno-energy-materials',
+      id: 'tno-energy-materials-transition',
       title: 'TNO Energy & Materials Transition',
       description: 'Klimaatverandering vraagt om duurzaamheid in energiesystemen, industrie en materialen',
-      image: '/img/cases/case2.jpg',
+      image: '/videos/_medium/210315-WarmingUP.jpg',
       video: '/videos/210315-WarmingUP.mov',
       industries: ['duurzaamheid', 'hightech', 'ict']
     },
     {
-      id: 'tno-healthy-living',
+      id: 'tno-healthy-living-work',
       title: 'TNO Healthy Living & Work',
       description: 'Wezenlijke innovaties in de gezondheidszorg helder in beeld gebracht',
-      image: '/img/cases/case3.jpg',
+      image: '/videos/_medium/201002-tnogezondleven.jpg',
+      video: '/videos/201002-tnogezondleven.mov',
       industries: ['duurzaamheid', 'gezondheidszorg', 'hightech']
     },
     {
       id: 'linxis',
       title: 'LinXis Biopharmaceuticals',
       description: 'Terralemon verzorgt de huisstijl voor LinXis Biopharmaceuticals',
-      image: '/img/cases/case4.jpg',
-      video: '/videos/250113_Unboxed.mov',
+      image: '/videos/_medium/241118_LinXis.jpg',
+      video: '/videos/241118_LinXis_6.mov',
       industries: ['gezondheidszorg']
     },
     {
-      id: 'tno-dit-is-onze-tijd',
+      id: 'tno-ditisonzetijd',
       title: 'TNO #ditisonzetijd',
       description: '',
-      image: '/img/cases/case5.jpg',
+      image: '/videos/_medium/240614-Dit-is-onze-tijd.jpg',
       video: '/videos/240614-dit-is-onze-tijd-720.mov',
       industries: ['gezondheidszorg', 'hightech']
     },
     {
-      id: 'tno-mobility',
+      id: 'tno-mobility-built-environment',
       title: 'TNO Mobility & Built Environment',
-      description: 'Onze mobiliteit wordt steeds slimmer en efficiënter, maar ook complexer',
-      image: '/img/cases/case6.jpg',
+      description: 'Naar een slim en duurzaam logistiek- en mobiliteitssysteem',
+      image: '/videos/_medium/200409-Zero.jpg',
       video: '/videos/200409-Zero.mov',
       industries: ['duurzaamheid', 'hightech', 'ict'],
       size: 'large'
+    },
+    {
+      id: 'tno-ict-strategy-policy',
+      title: 'TNO ICT, Strategy & Policy',
+      description: 'Slimme campagnes voor de unit ICT, Strategy & Policy van TNO',
+      image: '/videos/_medium/190916_FeedTheFuture.jpg',
+      video: '/videos/190916_FeedTheFuture.mov',
+      industries: ['gezondheidszorg', 'hightech', 'ict'],
+      size: 'large'
+    },
+    {
+      id: 'npo-zappelin-app',
+      title: 'NPO Zappelin app',
+      description: 'Bobbie en Ollie spelen een hoofdrol in de populaire Zappelin app',
+      image: '/videos/_medium/240325-zappelinapp.jpg',
+      video: '/videos/240325-zappelinapp.mov',
+      industries: ['omroepen']
+    },
+    {
+      id: 'zappelin',
+      title: 'NPO Zappelin',
+      description: 'Terralemon heeft de zender ontworpen van de grootste kinderzender van Nederland',
+      image: '/videos/_medium/180626-NPO-Zappelin.jpg',
+      video: '/videos/180626-NPO-Zappelin.mov',
+      industries: ['omroepen']
+    },
+    {
+      id: 'zin-in-zappelin',
+      title: 'Zin in Zappelin',
+      description: 'Een fantasiewereld die perfect aansluit bij de belevingswereld van jonge kinderen',
+      image: '/videos/_medium/190819-ziz-avond.jpg',
+      video: '/videos/190819-ziz-avond.mov',
+      industries: ['omroepen']
+    },
+    {
+      id: 'tno-interne-campagnes',
+      title: 'TNO interne campagnes',
+      description: 'TNO\'s interne campagnes voor vitaliteit, mobiliteit en toegankelijkheid',
+      image: '/videos/_medium/190614-TNO-intern.jpg',
+      video: '/videos/190614-TNO-intern.mov',
+      industries: ['hightech']
+    },
+    {
+      id: 'ing-think',
+      title: 'ING THINK',
+      description: 'Dagelijks internationale analyses en prognoses door ING analisten en editors',
+      image: '/img/projects/_medium/THINK-r-Realigned-1920x1080-8-2-main.jpg',
+      industries: [],
+      size: 'large'
+    },
+    {
+      id: 'imaging-center-adore',
+      title: 'Amsterdam UMC Imaging Center',
+      description: 'De nieuwste imaging beeldtechnieken en de bundeling van onderzoek op de Zuidas',
+      image: '/videos/_medium/230615-ImagingCenter.jpg',
+      video: '/videos/230615-ImagingCenter.mov',
+      industries: ['gezondheidszorg'],
+      size: 'large'
+    },
+    {
+      id: 'citrienfonds',
+      title: 'Citrienfonds',
+      description: 'Duurzame en breed inzetbare verbeteringen in de huidige gezondheidszorg',
+      image: '/videos/_medium/211026-citrienfonds.jpg',
+      video: '/videos/211026-citrienfonds.mov',
+      industries: ['gezondheidszorg', 'ict']
+    },
+    {
+      id: 'artificiele-intelligentie',
+      title: 'Artificiële Intelligentie',
+      description: 'Kunstmatige intelligentie gaat ons leven en werk veranderen, zo veel is duidelijk',
+      image: '/videos/_medium/181221-AI.jpg',
+      video: '/videos/181221-AI.mov',
+      industries: ['gezondheidszorg']
+    },
+    {
+      id: 'go-kinderopvang',
+      title: 'GO! Kinderopvang',
+      description: 'Pedagogisch beleid in animaties uitgelegd',
+      image: '/img/projects/_large/220901-GO-kinderopvang3.jpg',
+      industries: []
+    },
+    {
+      id: 'pcsi',
+      title: 'Partnership for Cyber Security Innovation',
+      description: 'Hoe beschermen we ons tegen de cyberaanvallen van morgen?',
+      image: '/img/projects/_large/PCSI-case2.jpg',
+      industries: ['ict']
+    },
+    {
+      id: 'cyber-security',
+      title: 'Cyber Security',
+      description: 'Gebundelde kracht om onze digitale wereld veiliger te maken',
+      image: '/videos/_medium/200311-Smart-Security.jpg',
+      video: '/videos/200311-Smart-Security.mov',
+      industries: ['ict'],
+      size: 'large'
+    },
+    {
+      id: 'wilhelmina-ziekenhuis',
+      title: 'UMC Utrecht Wilhelmina Kinderziekenhuis',
+      description: 'Hoe Osteogenesis Imperfecta afwijkende botgroei veroorzaakt',
+      image: '/videos/_medium/221005-OI.jpg',
+      video: '/videos/221005-OI.mov',
+      industries: ['gezondheidszorg'],
+      size: 'large'
+    },
+    {
+      id: 'antoni-van-leeuwenhoek',
+      title: 'Antoni van Leeuwenhoek',
+      description: 'Baanbrekende therapieën en technieken in begrijpelijke taal en duidelijke stijl',
+      image: '/videos/_medium/220322-NKI.jpg',
+      video: '/videos/220322-NKI.mov',
+      industries: ['gezondheidszorg']
+    },
+    {
+      id: 'nfu-nfukwaliteit',
+      title: 'NFU en NFU Kwaliteit',
+      description: 'Design voor de overkoepelende organisatie van de umc\'s',
+      image: '/img/projects/_large/NFU-case-1.jpg',
+      industries: ['gezondheidszorg']
+    },
+    {
+      id: 'vuyk-engineering',
+      title: 'Vuyk Engineering',
+      description: 'Identiteit voor Vuyk Engineering, een vermaard high-tech scheepsbouwer',
+      image: '/img/projects/_large/Vuyk1.jpg',
+      industries: [],
+      halfWidth: true
+    },
+    {
+      id: 'tno-strategische-analyses-beleid',
+      title: 'TNO Strategische Analyses & Beleid',
+      description: 'Hoe complexe en abstracte vraagstukken uit te leggen?',
+      image: '/img/projects/_large/200610-Collaboratieve-Business-Modellen-6.jpg',
+      industries: ['hightech', 'ict'],
+      halfWidth: true
+    },
+    {
+      id: 'biorizon',
+      title: 'Biorizon',
+      description: 'Verduurzaming van aromaten uit restbiomassa en recyclestromen',
+      image: '/img/projects/_large/240228-biorizon.jpg',
+      industries: ['duurzaamheid', 'hightech'],
+      halfWidth: true
+    },
+    {
+      id: 'boele-de-bever-voor-heutinkgroep',
+      title: 'Boele de bever voor de Heutinkgroep',
+      description: 'Een sympathieke campagne waarin bouwen de leefomgeving verrijkt',
+      image: '/videos/_medium/200921-Boele_MovingStill.jpg',
+      video: '/videos/200921-Boele_MovingStill.mp4',
+      industries: [],
+      halfWidth: true
     }
   ];
 
@@ -80,59 +235,51 @@ export default function Cases() {
   return (
     <Layout title="Cases" description="Bekijk onze portfolio van projecten en cases">
       {/* Header */}
-      <div className="main_banner position-relative d-flex align-items-center bg-black text-white">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8">
-              <h1 className="display-3 mb-2">Cases</h1>
-              <h2 className="fs-3 fw-light mb-5">We zijn trots op alles wat we maken.</h2>
-            </div>
+      <div className="container-fluid px-0">
+        <div className="row g-0">
+          <div className="col-12">
+            <h1 className="display-3 fw-medium mt-2 text-center">Cases</h1>
           </div>
-        </div>
-      </div>
-
-      {/* Filter en Cases Grid */}
-      <div className="container-fluid">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 mt-5">
-              <h3 className="mb-4">Industrieën</h3>
-              <ul className="list-group list-group-flush mb-5">
-                {industries.map(industry => (
-                  <li className="list-group-item fs-small" key={industry.id}>
-                    <a 
-                      href="#" 
-                      className={`industry-link ${activeIndustry === industry.id ? 'active' : ''}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setActiveIndustry(industry.id);
-                      }}
-                    >
-                      {industry.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="col-12">
-              <div className="row bg-dark g-0">
-                {filteredCases.map((caseItem) => (
-                  <div 
-                    className={`col-md-${caseItem.size === 'large' ? '12' : '6'} col-lg-${caseItem.size === 'large' ? '8' : '4'}`} 
-                    key={caseItem.id}
+          <div className="col-md-12 mb-3 my-sm-3 text-center">
+            <ul className="list-group list-group-horizontal text-lowercase justify-content-center">
+              {industries.map(industry => (
+                <li 
+                  className={`list-group-item fs-small ${activeIndustry === industry.id ? 'active' : ''}`} 
+                  key={industry.id}
+                >
+                  <a 
+                    href="#" 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setActiveIndustry(industry.id);
+                    }}
                   >
-                    <Link 
-                      href={`/cases/${caseItem.id}`} 
-                      className="card card_case card-ripple-js w-100 border-0 bg-dark text-white"
-                      data-industries={caseItem.industries.join('|')}
-                    >
-                      <div className="card-frame overflow-hidden">
-                        <img 
-                          src={caseItem.image} 
-                          className="position-absolute object-fit-contain w-100" 
-                          alt={caseItem.title} 
-                        />
-                        {caseItem.video && (
+                    {industry.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="col-12">
+            <div className="row bg-dark g-0">
+              {filteredCases.map((caseItem) => (
+                <div 
+                  className={`${caseItem.halfWidth ? 'col-md-6 col-lg-6' : caseItem.size === 'large' ? 'col-md-12 col-lg-8' : 'col-md-6 col-lg-4'}`} 
+                  key={caseItem.id}
+                >
+                  <Link 
+                    href={`/cases/${caseItem.id}`} 
+                    className="card card_case card-ripple-js w-100 border-0 bg-dark text-white"
+                    data-industries={caseItem.industries.join('|')}
+                  >
+                    <div className="card-frame overflow-hidden">
+                      {caseItem.video ? (
+                        <>
+                          <img 
+                            src={caseItem.image} 
+                            className="position-absolute object-fit-contain w-100" 
+                            alt={caseItem.title} 
+                          />
                           <video 
                             poster={caseItem.image} 
                             className="card-img-top lazy" 
@@ -141,21 +288,23 @@ export default function Cases() {
                           >
                             <source data-src={caseItem.video} type="video/mp4" />
                           </video>
-                        )}
-                      </div>
+                        </>
+                      ) : (
+                        <img src={caseItem.image} className="card-img-top" alt={caseItem.title} />
+                      )}
+                    </div>
 
-                      <div className="card-img-overlay p-3 d-flex">
-                        <div className="card-body p-0 align-self-end">
-                          <p className="card-text fw-medium mb-2">{caseItem.title}</p>
-                          <h4 className="card-title fs-3 fw-light text-white mt-0 d-none d-lg-block">
-                            {caseItem.description}
-                          </h4>
-                        </div>
+                    <div className="card-img-overlay p-3 d-flex">
+                      <div className="card-body p-0 align-self-end">
+                        <p className="card-text fw-medium mb-2">{caseItem.title}</p>
+                        <h4 className="card-title fs-3 fw-light text-white mt-0 d-none d-lg-block">
+                          {caseItem.description}
+                        </h4>
                       </div>
-                    </Link>
-                  </div>
-                ))}
-              </div>
+                    </div>
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
         </div>
