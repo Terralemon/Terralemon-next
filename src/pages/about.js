@@ -3,18 +3,18 @@ import Link from 'next/link';
 
 export default function About() {
   // Lijst met logo's van klanten
-  const clientLogos = [
-    { id: 'avrotros', name: 'AVROTROS', logo: 'https://terralemon.nl/img/clients/_small/avrotros_logo.png' },
-    { id: 'kro-ncrv', name: 'KRO-NCRV', logo: 'https://terralemon.nl/img/clients/_small/kro-ncrv_logo.png' },
-    { id: 'npo', name: 'NPO', logo: 'https://terralemon.nl/img/clients/_small/npo_logo.png' },
-    { id: 'nfu', name: 'NFU', logo: 'https://terralemon.nl/img/clients/_small/nfu_logo.png' },
-    { id: 'tno', name: 'TNO', logo: 'https://terralemon.nl/img/clients/_small/tno_logo.png' },
-    { id: 'ing', name: 'ING', logo: 'https://terralemon.nl/img/clients/_small/ing_logo.png' },
-    { id: 'minezk', name: 'Ministerie van Economische Zaken', logo: 'https://terralemon.nl/img/clients/_small/minezk_logo.png', colSize: 3 },
-    { id: 'foodvalley', name: 'Foodvalley', logo: 'https://terralemon.nl/img/clients/_small/foodvalley.png', colSize: 3 },
-    { id: 'pbl', name: 'Planbureau voor de leefomgeving', logo: 'https://terralemon.nl/img/clients/_small/Planbureau_voor_de_leefomgeving.png', colSize: 3 },
-    { id: 'go', name: 'GO! Kinderopvang', logo: 'https://terralemon.nl/img/clients/_small/go-kinderopvang_logo.png', colSize: 3 },
-    { id: 'pcsi', name: 'PCSI', logo: 'https://terralemon.nl/img/clients/_small/logo-pcsi.png', colSize: 3 }
+  const clients = [
+    { id: 'avrotros', name: 'AVROTROS', logo: '/img/clients/_small/avrotros_logo.png' },
+    { id: 'kro-ncrv', name: 'KRO-NCRV', logo: '/img/clients/_small/kro-ncrv_logo.png' },
+    { id: 'npo', name: 'NPO', logo: '/img/clients/_small/npo_logo.png' },
+    { id: 'nfu', name: 'NFU', logo: '/img/clients/_small/nfu_logo.png' },
+    { id: 'tno', name: 'TNO', logo: '/img/clients/_small/tno_logo.png' },
+    { id: 'ing', name: 'ING', logo: '/img/clients/_small/ing_logo.png' },
+    { id: 'minezk', name: 'Ministerie van Economische Zaken', logo: '/img/clients/_small/minezk_logo.png', colSize: 3 },
+    { id: 'foodvalley', name: 'Foodvalley', logo: '/img/clients/_small/foodvalley.png', colSize: 3 },
+    { id: 'pbl', name: 'Planbureau voor de leefomgeving', logo: '/img/clients/_small/Planbureau_voor_de_leefomgeving.png', colSize: 3 },
+    { id: 'go', name: 'GO! Kinderopvang', logo: '/img/clients/_small/go-kinderopvang_logo.png', colSize: 3 },
+    { id: 'pcsi', name: 'PCSI', logo: '/img/clients/_small/logo-pcsi.png', colSize: 3 }
   ];
 
   return (
@@ -67,7 +67,7 @@ export default function About() {
         <div className="container">
           <h2 className="text-center my-4">Onze opdrachtgevers</h2>
           <div className="row gx-lg-5 bg-white">
-            {clientLogos.map((client) => (
+            {clients.map((client) => (
               <div className={`col-6 col-md-${client.colSize || 6} col-lg-${client.colSize || 4}`} key={client.id}>
                 <Link href={`/clients/${client.id}`} className="card card_client p-3 my-3 d-flex justify-content-center border-0 h-100">
                   <img src={client.logo} className="card-img" alt={`Logo ${client.name}`} />
@@ -81,15 +81,14 @@ export default function About() {
       {/* Het team */}
       <div className="container-fluid bg-light">
         <div className="container">
-          <div className="row my-5 align-items-center">
+          <div className="row align-items-center py-5">
             <div className="col-lg-6 mb-4 mb-lg-0">
-              <img src="https://terralemon.nl/img/general/team.jpg" alt="Terralemon Team" className="img-fluid rounded" />
+              <h2 className="fs-1 fw-medium mb-4">Het team</h2>
+              <p>We zijn een team van strategen, vormgevers, animators, interactiedesigners, full-stack developers en motion designers. We zijn persoonlijk in onze aanpak en direct in communicatie. We focussen op een langdurige relatie en doen dat vanuit een gezonde nieuwsgierigheid voor de wensen en doelstellingen van onze klanten.</p>
+              <p>We werken voor grote en kleine opdrachtgevers en hebben expertise in verschillende markten en domeinen.</p>
             </div>
             <div className="col-lg-6">
-              <h3 className="fs-2 mb-3">We zijn net zo strategisch als creatief</h3>
-              <p className="lead">Terralemon is in 2004 opgericht door Harold Kuiper, Arthur Kloostra en Remco Pijpers. Momenteel werkt Harold Kuiper aan het roer met een fantastisch team van vaste medewerkers en een flexibele schil van experts op het gebied van strategie, creativiteit, content, technologie, film en animatie.</p>
-              <p>Dat zorgt voor de juiste balans tussen continuïteit en flexibiliteit. Op die manier kunnen we altijd de juiste mix van kennis en ervaring inzetten om onze opdrachtgevers optimaal te bedienen.</p>
-              <p className="mb-0">We kennen elkaar door en door, vullen elkaar aan en dagen elkaar elke dag uit. Altijd met maar één doel voor ogen: het beste resultaat voor onze opdrachtgevers.</p>
+              <img src="/img/general/team.jpg" alt="Terralemon Team" className="img-fluid rounded" />
             </div>
           </div>
         </div>

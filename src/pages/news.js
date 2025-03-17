@@ -21,7 +21,7 @@ export default function News() {
       title: 'Nieuwe website Terralemon',
       excerpt: 'We hebben onze website vernieuwd met een fris ontwerp en verbeterde gebruikerservaring.',
       date: '15 maart 2023',
-      image: 'https://terralemon.nl/img/news/news1.jpg',
+      image: '/img/news/news1.jpg',
       categories: ['updates']
     },
     {
@@ -29,7 +29,7 @@ export default function News() {
       title: 'TNO Unboxed wint animatie award',
       excerpt: 'Onze animatie voor TNO Unboxed is bekroond met een internationale prijs voor innovatieve animatie.',
       date: '28 februari 2023',
-      image: 'https://terralemon.nl/img/news/news2.jpg',
+      image: '/img/news/news2.jpg',
       categories: ['awards', 'cases']
     },
     {
@@ -37,7 +37,7 @@ export default function News() {
       title: 'Terralemon aanwezig op Dutch Design Week',
       excerpt: 'Kom ons ontmoeten op de Dutch Design Week waar we onze laatste projecten presenteren.',
       date: '10 januari 2023',
-      image: 'https://terralemon.nl/img/news/news3.jpg',
+      image: '/img/news/news3.jpg',
       categories: ['events']
     },
     {
@@ -45,7 +45,7 @@ export default function News() {
       title: 'Case study: LinXis website',
       excerpt: 'Lees onze nieuwe case study over de ontwikkeling van de LinXis website en hoe we hun visuele identiteit hebben vertaald naar een digitale ervaring.',
       date: '5 december 2022',
-      image: 'https://terralemon.nl/img/news/news4.jpg',
+      image: '/img/news/news4.jpg',
       categories: ['cases']
     },
     {
@@ -53,7 +53,7 @@ export default function News() {
       title: 'Workshop Motion Design',
       excerpt: 'Terralemon organiseert een workshop over motion design in ons kantoor in Amsterdam.',
       date: '22 november 2022',
-      image: 'https://terralemon.nl/img/news/news5.jpg',
+      image: '/img/news/news5.jpg',
       categories: ['events']
     },
     {
@@ -61,7 +61,7 @@ export default function News() {
       title: 'Nieuw partnership met TNO',
       excerpt: 'We zijn verheugd om aan te kondigen dat we een langdurige samenwerking zijn aangegaan met TNO.',
       date: '15 oktober 2022',
-      image: 'https://terralemon.nl/img/news/news6.jpg',
+      image: '/img/news/news6.jpg',
       categories: ['updates']
     }
   ];

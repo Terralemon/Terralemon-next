@@ -20,21 +20,22 @@ const newsItems = [
       <p>We nodigen je uit om de site te verkennen en feedback te geven. Dit is nog maar het begin - we hebben plannen om de komende maanden nog meer functies en inhoud toe te voegen.</p>
     `,
     date: '15 maart 2023',
-    image: 'https://terralemon.nl/img/news/news1.jpg',
+    image: '/img/news/news1.jpg',
     categories: ['updates']
   },
   {
-    id: 'tno-unboxed-ai-project',
-    title: 'TNO Unboxed: Nieuwe AI-project gelanceerd',
-    excerpt: 'We hebben een nieuw animatieproject afgerond voor TNO, waarin we hun belangrijke onderzoek naar AI-toepassingen visualiseren.',
+    id: 'tno-animation-award',
+    title: 'TNO Unboxed wint animatie award',
+    excerpt: 'Onze animatie voor TNO Unboxed is bekroond met een internationale prijs voor innovatieve animatie.',
     content: `
-      <p>We zijn trots om aan te kondigen dat we een nieuwe animatie hebben ontwikkeld voor TNO's Unboxed-serie, waarin we hun baanbrekende onderzoek naar AI-toepassingen visualiseren.</p>
-      <p>In deze animatie maken we complexe AI-concepten toegankelijk voor een breder publiek, met duidelijke visuele metaforen en precieze uitleg. Het project benadrukt hoe TNO werkt aan verantwoorde AI-toepassingen die voldoen aan Nederlandse en Europese waarden en wetgeving.</p>
-      <p>De animatie is te zien op de TNO website en via hun sociale mediakanalen.</p>
+      <p>We zijn trots om aan te kondigen dat onze animatie voor het TNO Unboxed project is bekroond met een internationale prijs voor innovatieve animatie en storytelling.</p>
+      <p>De jury prees de combinatie van technische complexiteit en visuele helderheid in het overbrengen van complexe wetenschappelijke concepten aan een breed publiek.</p>
+      <p>"Terralemon heeft bewezen dat animatie een krachtig medium is voor kennisoverdracht en communicatie van geavanceerde technologische concepten", aldus de juryvoorzitter.</p>
+      <p>Het TNO Unboxed-project was een samenwerking tussen ons creatieve team en de wetenschappelijke experts van TNO, met als doel hun innovatieve onderzoek op een toegankelijke manier te presenteren.</p>
     `,
-    date: '22 februari 2023',
-    image: 'https://terralemon.nl/img/news/news2.jpg',
-    categories: ['projecten', 'animatie']
+    date: '28 februari 2023',
+    image: '/img/news/news2.jpg',
+    categories: ['awards', 'cases']
   },
   {
     id: 'terralemon-op-award-show',
@@ -47,7 +48,7 @@ const newsItems = [
       <p>De Dutch Design Week vindt plaats van 21 tot 29 oktober. U kunt ons vinden in de Innovation Hall, stand 42.</p>
     `,
     date: '10 januari 2023',
-    image: 'https://terralemon.nl/img/news/news3.jpg',
+    image: '/img/news/news3.jpg',
     categories: ['events']
   },
   {
@@ -67,7 +68,7 @@ const newsItems = [
       <p>De resultaten van dit project hebben alle verwachtingen overtroffen, met een significante toename in betrokkenheid op de site en positieve feedback van alle stakeholders.</p>
     `,
     date: '5 december 2022',
-    image: 'https://terralemon.nl/img/news/news4.jpg',
+    image: '/img/news/news4.jpg',
     categories: ['cases']
   },
   {
@@ -88,7 +89,7 @@ const newsItems = [
       <p>Plaatsen zijn beperkt, dus schrijf je snel in via het contactformulier op onze website.</p>
     `,
     date: '22 november 2022',
-    image: 'https://terralemon.nl/img/news/news5.jpg',
+    image: '/img/news/news5.jpg',
     categories: ['events']
   },
   {
@@ -107,7 +108,7 @@ const newsItems = [
       <p>De eerste projecten onder dit partnership zijn al in ontwikkeling en zullen in de komende maanden worden gelanceerd. We kijken ernaar uit om de resultaten van deze samenwerking te delen.</p>
     `,
     date: '15 oktober 2022',
-    image: 'https://terralemon.nl/img/news/news6.jpg',
+    image: '/img/news/news6.jpg',
     categories: ['updates']
   }
 ];
