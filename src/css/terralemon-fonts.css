@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* CSS Document */
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('/fonts/Gotham-Light.eot');
+    src: url('/fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Gotham-Light.woff') format('woff'),
+         url('/fonts/Gotham-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('/fonts/Gotham-Book.eot');
+    src: url('/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Gotham-Book.woff') format('woff'),
+         url('/fonts/Gotham-Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('/fonts/Gotham-Medium.eot');
+    src: url('/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Gotham-Medium.woff') format('woff'),
+         url('/fonts/Gotham-Medium.ttf') format('truetype'),
+         url('/fonts/Gotham-Medium.svg#gothambook') format('svg');
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('/fonts/Gotham-Bold.eot');
+    src: url('/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Gotham-Bold.woff') format('woff'),
+         url('/fonts/Gotham-Bold.ttf') format('truetype');
+}
+
+
+body { font-family: Gotham-Book; font-weight: normal; }
+
+/* responsible for fout https://meowni.ca/font-style-matcher/ */
+body.js-loading {
+    font-family: Raleway;
+    font-size: 17px;
+    line-height: 1.5;
+    color: black;
+    visibility: visible;
+    letter-spacing: 0.1px;
+    word-spacing: 0.25px;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-item a, .btn, strong, b { font-family: Gotham-Medium, sans-serif; font-weight: normal; }
+
+.fw-light { font-family: Gotham-Light, sans-serif; font-weight: normal; }
+.fw-normal { font-family: Gotham-Book, sans-serif; font-weight: normal; }
+.fw-medium { font-family: Gotham-Medium, sans-serif; font-weight: normal; }
+.fw-bold { font-family: Gotham-Bold, sans-serif; font-weight: normal; }

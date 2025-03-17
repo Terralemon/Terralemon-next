@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+
+:root {
+  --light: #f8f9fa;
+  --tno-blauw: #123EB7;
+  --tno-blauw-donker: #002484;
+  --tno-blauw-actie: #3369FF;
+
+  --tno-inkt: #00030A;
+  --tno-oranje: #F57118;
+
+  --tno-groen: #2EA339;
+  --tno-cyaan: #66BECC;
+  --tno-paars: #8D70CC;
+  --tno-geel: #F5C814;
+
+  --height-navbar: 90px;
+}
+
+@font-face {
+    font-family: "Object Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/tno/fonts/ObjectSans/PPObjectSans-Regular.otf") format("opentype"), url("/fonts/tno/fonts/ObjectSans/PPObjectSans-Regular.woff2") format("woff2"), url("/fonts/tno/fonts/ObjectSans/PPObjectSans-Regular.woff") format("woff"), url("/fonts/tno/fonts/ObjectSans/PPObjectSans-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Object Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: url("/fonts/tno/fonts/ObjectSans/ObjectSans-Bold.otf") format("opentype"), url("/fonts/tno/fonts/ObjectSans/ObjectSans-Bold.woff2") format("woff2"), url("/fonts/tno/fonts/ObjectSans/ObjectSans-Bold.woff") format("woff")
+}
+
+@font-face {
+    font-family: "FS Me";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/tno/fonts/FSMe/FSMe-Light.ttf") format("opentype")
+}
+
+@font-face {
+    font-family: "FS Me";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/tno/fonts/FSMe/FSMePro-Bold.otf") format("opentype")
+}
+
+body { font-family: 'FS Me', sans-serif; color: var(--tno-inkt); }
+h1, h2, h3, h4, h5, h6 { font-family: 'Object Sans', sans-serif; font-weight: 800; }
+
+.navbar { height: var(--height-navbar); }
+
+.bg-tno-blauw { background-color: var(--tno-blauw) !important; }
+.bg-tno-blauw-donker { background-color: var(--tno-blauw-donker) !important; }
+.bg-tno-blauw-actie { background-color: var(--tno-blauw-actie) !important; }
+
+.btn-primary { background-color: var(--tno-blauw) !important; }
+.btn-primary:hover { background-color: var(--tno-blauw-actie) !important; }
+
+.label, b, strong, .fw-bold { font-weight: 700 !important; }
+.accordion-collapse, .label, .form-control, .form-select, .form-check-label, .card-header, .form-range-seconds { font-family: 'FS Me', sans-serif; font-weight: 400; }
+.accordion-collapse { font-size: 120%; color: #666 !important; }
+
+.accordion-button { color: inherit; background-color: transparent !important; box-shadow: none !important; padding: 0 !important; }
+.accordion-button::after { margin-left: .5rem; }
+.label { color: var(--dark) !important; }
+
+.preview-text { font-family: 'FS Me', sans-serif; font-weight: 400; }
+
+select disabled { color: #8e959c !important; }
+option { color: var(--dark); }
+option:first-child { color: #8e959c; }
+
+@media only screen and (min-width: 992.1px) {
+  .label { font-size: 125%; }
+}
+
+@media only screen and (max-width: 992px) {
+  h3 { font-size: 220%; }
+  .navbar .navbar-brand { margin: 0; padding: 0; }
+  .navbar .navbar-brand img { max-width: 140px; }
+}
+
+
+
+
+
