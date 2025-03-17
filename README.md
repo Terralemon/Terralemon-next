@@ -58,7 +58,7 @@ Deze website is voorbereid om te integreren met Expression Engine als headless C
 Voor vragen of opmerkingen, neem contact op met:
 
 **Terralemon B.V.**  
-Oudezijds Achterburgwal 141B  
-1012 DG Amsterdam  
+Keizersgracht 75
+1015 CE Amsterdam  
 +31 20 62 48 300  
 fresh@terralemon.nl 
