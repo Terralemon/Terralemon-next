@@ -25,8 +25,8 @@ export default function Cases() {
       id: 'tno-unboxed',
       title: 'TNO Unboxed',
       description: 'Campagne waarin TNO experts nieuwe innovaties binnen het veiligheidsdomein bespreken',
-      image: '/videos/_medium/TNO-UB-project-image-5.jpg',
-      video: '/videos/250113_Unboxed.mov',
+      image: 'https://terralemon.nl/videos/_medium/TNO-UB-project-image-5.jpg',
+      video: 'https://terralemon.nl/videos/250113_Unboxed.mov',
       industries: ['hightech', 'ict'],
       size: 'large' // large voor col-lg-8, default voor col-lg-4
     },
@@ -34,40 +34,40 @@ export default function Cases() {
       id: 'tno-energy-materials-transition',
       title: 'TNO Energy & Materials Transition',
       description: 'Klimaatverandering vraagt om duurzaamheid in energiesystemen, industrie en materialen',
-      image: '/videos/_medium/210315-WarmingUP.jpg',
-      video: '/videos/210315-WarmingUP.mov',
+      image: 'https://terralemon.nl/videos/_medium/210315-WarmingUP.jpg',
+      video: 'https://terralemon.nl/videos/210315-WarmingUP.mov',
       industries: ['duurzaamheid', 'hightech', 'ict']
     },
     {
       id: 'tno-healthy-living-work',
       title: 'TNO Healthy Living & Work',
       description: 'Wezenlijke innovaties in de gezondheidszorg helder in beeld gebracht',
-      image: '/videos/_medium/201002-tnogezondleven.jpg',
-      video: '/videos/201002-tnogezondleven.mov',
+      image: 'https://terralemon.nl/videos/_medium/201002-tnogezondleven.jpg',
+      video: 'https://terralemon.nl/videos/201002-tnogezondleven.mov',
       industries: ['duurzaamheid', 'gezondheidszorg', 'hightech']
     },
     {
       id: 'linxis',
       title: 'LinXis Biopharmaceuticals',
       description: 'Terralemon verzorgt de huisstijl voor LinXis Biopharmaceuticals',
-      image: '/videos/_medium/241118_LinXis.jpg',
-      video: '/videos/241118_LinXis_6.mov',
+      image: 'https://terralemon.nl/videos/_medium/241118_LinXis.jpg',
+      video: 'https://terralemon.nl/videos/241118_LinXis_6.mov',
       industries: ['gezondheidszorg']
     },
     {
       id: 'tno-ditisonzetijd',
       title: 'TNO #ditisonzetijd',
       description: '',
-      image: '/videos/_medium/240614-Dit-is-onze-tijd.jpg',
-      video: '/videos/240614-dit-is-onze-tijd-720.mov',
+      image: 'https://terralemon.nl/videos/_medium/240614-Dit-is-onze-tijd.jpg',
+      video: 'https://terralemon.nl/videos/240614-dit-is-onze-tijd-720.mov',
       industries: ['gezondheidszorg', 'hightech']
     },
     {
       id: 'tno-mobility-built-environment',
       title: 'TNO Mobility & Built Environment',
       description: 'Naar een slim en duurzaam logistiek- en mobiliteitssysteem',
-      image: '/videos/_medium/200409-Zero.jpg',
-      video: '/videos/200409-Zero.mov',
+      image: 'https://terralemon.nl/videos/_medium/200409-Zero.jpg',
+      video: 'https://terralemon.nl/videos/200409-Zero.mov',
       industries: ['duurzaamheid', 'hightech', 'ict'],
       size: 'large'
     },
@@ -75,8 +75,8 @@ export default function Cases() {
       id: 'tno-ict-strategy-policy',
       title: 'TNO ICT, Strategy & Policy',
       description: 'Slimme campagnes voor de unit ICT, Strategy & Policy van TNO',
-      image: '/videos/_medium/190916_FeedTheFuture.jpg',
-      video: '/videos/190916_FeedTheFuture.mov',
+      image: 'https://terralemon.nl/videos/_medium/190916_FeedTheFuture.jpg',
+      video: 'https://terralemon.nl/videos/190916_FeedTheFuture.mov',
       industries: ['gezondheidszorg', 'hightech', 'ict'],
       size: 'large'
     },
@@ -84,32 +84,32 @@ export default function Cases() {
       id: 'npo-zappelin-app',
       title: 'NPO Zappelin app',
       description: 'Bobbie en Ollie spelen een hoofdrol in de populaire Zappelin app',
-      image: '/videos/_medium/240325-zappelinapp.jpg',
-      video: '/videos/240325-zappelinapp.mov',
+      image: 'https://terralemon.nl/videos/_medium/240325-zappelinapp.jpg',
+      video: 'https://terralemon.nl/videos/240325-zappelinapp.mov',
       industries: ['omroepen']
     },
     {
       id: 'zappelin',
       title: 'NPO Zappelin',
       description: 'Terralemon heeft de zender ontworpen van de grootste kinderzender van Nederland',
-      image: '/videos/_medium/180626-NPO-Zappelin.jpg',
-      video: '/videos/180626-NPO-Zappelin.mov',
+      image: 'https://terralemon.nl/videos/_medium/180626-NPO-Zappelin.jpg',
+      video: 'https://terralemon.nl/videos/180626-NPO-Zappelin.mov',
       industries: ['omroepen']
     },
     {
       id: 'zin-in-zappelin',
       title: 'Zin in Zappelin',
       description: 'Een fantasiewereld die perfect aansluit bij de belevingswereld van jonge kinderen',
-      image: '/videos/_medium/190819-ziz-avond.jpg',
-      video: '/videos/190819-ziz-avond.mov',
+      image: 'https://terralemon.nl/videos/_medium/190819-ziz-avond.jpg',
+      video: 'https://terralemon.nl/videos/190819-ziz-avond.mov',
       industries: ['omroepen']
     },
     {
       id: 'tno-interne-campagnes',
       title: 'TNO interne campagnes',
       description: 'TNO\'s interne campagnes voor vitaliteit, mobiliteit en toegankelijkheid',
-      image: '/videos/_medium/190614-TNO-intern.jpg',
-      video: '/videos/190614-TNO-intern.mov',
+      image: 'https://terralemon.nl/videos/_medium/190614-TNO-intern.jpg',
+      video: 'https://terralemon.nl/videos/190614-TNO-intern.mov',
       industries: ['hightech']
     },
     {
@@ -128,8 +128,8 @@ export default function Cases() {
       id: 'imaging-center-adore',
       title: 'Amsterdam UMC Imaging Center',
       description: 'De nieuwste imaging beeldtechnieken en de bundeling van onderzoek op de Zuidas',
-      image: '/videos/_medium/230615-ImagingCenter.jpg',
-      video: '/videos/230615-ImagingCenter.mov',
+      image: 'https://terralemon.nl/videos/_medium/230615-ImagingCenter.jpg',
+      video: 'https://terralemon.nl/videos/230615-ImagingCenter.mov',
       industries: ['gezondheidszorg'],
       size: 'large'
     },
@@ -137,16 +137,16 @@ export default function Cases() {
       id: 'citrienfonds',
       title: 'Citrienfonds',
       description: 'Duurzame en breed inzetbare verbeteringen in de huidige gezondheidszorg',
-      image: '/videos/_medium/211026-citrienfonds.jpg',
-      video: '/videos/211026-citrienfonds.mov',
+      image: 'https://terralemon.nl/videos/_medium/211026-citrienfonds.jpg',
+      video: 'https://terralemon.nl/videos/211026-citrienfonds.mov',
       industries: ['gezondheidszorg', 'ict']
     },
     {
       id: 'artificiele-intelligentie',
       title: 'Artificiële Intelligentie',
       description: 'Kunstmatige intelligentie gaat ons leven en werk veranderen, zo veel is duidelijk',
-      image: '/videos/_medium/181221-AI.jpg',
-      video: '/videos/181221-AI.mov',
+      image: 'https://terralemon.nl/videos/_medium/181221-AI.jpg',
+      video: 'https://terralemon.nl/videos/181221-AI.mov',
       industries: ['gezondheidszorg']
     },
     {
@@ -177,8 +177,8 @@ export default function Cases() {
       id: 'cyber-security',
       title: 'Cyber Security',
       description: 'Gebundelde kracht om onze digitale wereld veiliger te maken',
-      image: '/videos/_medium/200311-Smart-Security.jpg',
-      video: '/videos/200311-Smart-Security.mov',
+      image: 'https://terralemon.nl/videos/_medium/200311-Smart-Security.jpg',
+      video: 'https://terralemon.nl/videos/200311-Smart-Security.mov',
       industries: ['ict'],
       size: 'large'
     },
@@ -186,8 +186,8 @@ export default function Cases() {
       id: 'wilhelmina-ziekenhuis',
       title: 'UMC Utrecht Wilhelmina Kinderziekenhuis',
       description: 'Hoe Osteogenesis Imperfecta afwijkende botgroei veroorzaakt',
-      image: '/videos/_medium/221005-OI.jpg',
-      video: '/videos/221005-OI.mov',
+      image: 'https://terralemon.nl/videos/_medium/221005-OI.jpg',
+      video: 'https://terralemon.nl/videos/221005-OI.mov',
       industries: ['gezondheidszorg'],
       size: 'large'
     },
@@ -195,8 +195,8 @@ export default function Cases() {
       id: 'antoni-van-leeuwenhoek',
       title: 'Antoni van Leeuwenhoek',
       description: 'Baanbrekende therapieën en technieken in begrijpelijke taal en duidelijke stijl',
-      image: '/videos/_medium/220322-NKI.jpg',
-      video: '/videos/220322-NKI.mov',
+      image: 'https://terralemon.nl/videos/_medium/220322-NKI.jpg',
+      video: 'https://terralemon.nl/videos/220322-NKI.mov',
       industries: ['gezondheidszorg']
     },
     {
@@ -259,8 +259,8 @@ export default function Cases() {
       id: 'boele-de-bever-voor-heutinkgroep',
       title: 'Boele de bever voor de Heutinkgroep',
       description: 'Een sympathieke campagne waarin bouwen de leefomgeving verrijkt',
-      image: '/videos/_medium/200921-Boele_MovingStill.jpg',
-      video: '/videos/200921-Boele_MovingStill.mp4',
+      image: 'https://terralemon.nl/videos/_medium/200921-Boele_MovingStill.jpg',
+      video: 'https://terralemon.nl/videos/200921-Boele_MovingStill.mp4',
       industries: [],
       halfWidth: true
     }
